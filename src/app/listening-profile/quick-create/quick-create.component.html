@@ -1,0 +1,61 @@
+<form [formGroup]="form">
+  <p>Use the form below to quickly create a profile.</p>
+
+  <div fxLayout="row">
+
+    <div fxFlex="40%" fxFlex.md="60%" fxFlex.sm="50%" fxFlex.xs="100%">
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Id" formControlName="id" type="text"
+          autocomplete="id">
+
+        <mat-error *ngIf="form.controls['id'].hasError('required')">
+          Please enter an id
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Name" formControlName="name" type="text"
+          autocomplete="name">
+
+        <mat-error *ngIf="form.controls['name'].hasError('required')">
+          Please enter a name
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Desciption" formControlName="description" type="text" autocomplete="description">
+
+        <mat-error *ngIf="form.controls['description'].hasError('required')">
+          Please enter a description
+        </mat-error>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" [disabled]="form.invalid || disableSubmit" (click)="create(form.value)">Create</button>
+
+    </div>
+
+  </div>
+
+</form>
+
+<!-- <div class="password-rules" fxFlex="65%" fxFlex.sm="90%" fxFlex.xs="95%">
+    Password rules:
+    <mat-list>
+      <mat-list-item>
+        Must be at least 6 characters
+      </mat-list-item>
+
+      <mat-list-item>
+        Must contain at least one non alphanumeric character
+      </mat-list-item>
+
+      <mat-list-item>
+        Must contain at least one lowercase ('a'-'z')
+      </mat-list-item>
+
+      <mat-list-item>
+        Must contain at least one uppercase ('A'-'Z')
+      </mat-list-item>
+    </mat-list>
+  </div> -->

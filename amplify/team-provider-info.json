@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ngmusicanalysis-dev-164023-authRole",
+      "UnauthRoleArn": "arn:aws:iam::528600220408:role/amplify-ngmusicanalysis-dev-164023-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::528600220408:role/amplify-ngmusicanalysis-dev-164023-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ngmusicanalysis-dev-164023-deployment",
+      "UnauthRoleName": "amplify-ngmusicanalysis-dev-164023-unauthRole",
+      "StackName": "amplify-ngmusicanalysis-dev-164023",
+      "StackId": "arn:aws:cloudformation:us-east-1:528600220408:stack/amplify-ngmusicanalysis-dev-164023/7e0c1b00-1340-11ec-a621-12a7667d8e5b",
+      "AmplifyAppId": "d3aebim57149bp"
+    }
+  }
+}
